@@ -130,4 +130,3 @@ def average_number_of_days_between_orders(db):
         WHERE PreviousOrderDate != 0
     """
     return int(db.execute(query).fetchone()[0])
-    
